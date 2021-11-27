@@ -1,0 +1,41 @@
+var mData = new FormData();
+mData.append('token', 'xoxb-xxx');
+mData.append('channel', 'CNxxx');
+mData.append('text', 'test message from yahoo');
+mData.append('as_user', 'true');
+var xhr = new XMLHttpRequest();
+xhr.open('POST','https://slack.com/api/chat.postMessage', true);
+
+// Set up a handler for when the request finishes.
+xhr.onload = function () {
+  if (xhr.status === 200) {
+    // File(s) uploaded.
+      console.log("posted");
+  } else {
+    alert('An error occurred!');
+  }
+};
+xhr.send(mData);
+
+
+
+var mData = new FormData();
+mData.append('token', 'xoxb-xxx');
+mData.append('channel', 'CNXXX');
+mData.append('text', 'test message from yahoo');
+mData.append('as_user', 'true');
+var xhr = new XMLHttpRequest();
+xhr.open('POST','https://slack.com/api/chat.postMessage', true);
+
+// Set up a handler for when the request finishes.
+xhr.onload = function () {
+  if (xhr.status === 200) {
+    // File(s) uploaded.
+      console.log("posted");
+  } else {
+    alert('An error occurred!');
+  }
+};
+xhr.send(mData);
+
+
